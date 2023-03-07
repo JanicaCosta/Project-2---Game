@@ -2,6 +2,8 @@
 
 const cells = document.querySelectorAll(".cell")
 
+let checkTurn = true ;
+
 /** defining two players */
 
 let playerX = "X";
@@ -13,14 +15,19 @@ document.addEventListener("click", myfunction);
 
 function myfunction(event) {
     if(event.target.matches(".cell")){
-        console.log(event.target.id)
+        startGame(event.target.id)
     }
 };
 
 /** functions to creat for the game */
 
-function startGame() {
+    /**function to start the game, and to switch each turn */
 
+function startGame(id) {
+    let cell = document.getElementById(id);
+    turn = checkTurn ? playerX : playerO;
+    cell.textContent = turn;
+    checkTurn = !checkTurn;
 };
 
 function checkWinner() {
@@ -36,7 +43,7 @@ function gameCompleted() {
 }
 
 function computerPlays(){
-    
+
 }
 
 
