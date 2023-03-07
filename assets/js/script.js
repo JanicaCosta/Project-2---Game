@@ -45,6 +45,8 @@ function startGame(id) {
     checkWinner(turn);
 };
 
+  /**function to check winner and draw */
+
 function checkWinner() {
     const winner = winnerCombinations.some((comb) => {
         return comb.every((index) => {
