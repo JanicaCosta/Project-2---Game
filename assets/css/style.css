@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    height: 100px;
+    padding-top: 50px ;
+    text-transform: capitalize ;
+}
+
+body {
+    font-family: 'Tilt Neon', cursive;
+    background: white;
+    }
+
+
+.board {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto) ;
+    background: linear-gradient( 
+        90deg,
+        rgb(210, 210, 221) 60%,
+        rgb(124, 124, 235) 100% );
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 75px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7) {
+    border-left: none;
+}
+
+.cell:nth-child(3), .cell:nth-child(6), .cell:nth-child(9) {
+    border-right: none;
+}
+
+.cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.result-area {
+    text-align: center;
+    width: 100%;
+    
+}
+
+#buttonRestart {
+    margin-top: 50px;
+    background-color:  rgb(124, 124, 235);
+    border: 5px transparent;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: antiquewhite;
+    font-size: 1.5rem;
+}
