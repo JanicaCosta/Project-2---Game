@@ -16,3 +16,28 @@ function myfunction(event) {
         console.log(event.target.id)
     }
 };
+
+/** functions to creat for the game */
+
+function startGame() {
+
+};
+
+function checkWinner() {
+
+};
+
+function checkDraw() {
+
+}
+
+function gameCompleted() {
+
+}
+
+function computerPlays(){
+    
+}
+
+
+
